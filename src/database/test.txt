@@ -10,3 +10,9 @@
     "profesion":"Ingeniera",
     "ID_ROL":0
 }
+
+{
+    "ID_ROL": 1,
+    "nombreRol": "Administrador",
+    "descripcionRol": "Administrador - perfil destinado a los profesionales."
+}

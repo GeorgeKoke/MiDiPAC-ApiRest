@@ -17,7 +17,10 @@ export const createUsuario = async (req, res) => {
             profesion,
             ID_ROL
         });
-        res.json(nuevoUsuario);
+        return res.status(200).send({
+            status: 'success',
+            nuevoUsuario
+        });
     } catch (error) {
         return res.status(500).json({ message: error.message });
     }
