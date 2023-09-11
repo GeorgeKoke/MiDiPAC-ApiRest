@@ -54,5 +54,13 @@ export const updateRol = async (req,res) => {
     }
 };
 export const deleteRol = async (req,res) => {
-
+    try {
+        const {id} = req.params;
+        await Rol.destroy({
+            where:{ID_ROL: id},
+        });
+        return res.status(200).json({message:'Rol Eliminado correctamente'});
+    } catch (error) {
+        return res.status(500).json({message: error.message});
+    }
 };
