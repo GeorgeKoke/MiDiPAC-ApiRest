@@ -6,7 +6,7 @@ const router = Router();
 router.get('/usuarios',readUsuarios);
 router.get('/usuario/:id?/:rut?',readUsuario);
 router.post('/usuario',createUsuario);
-router.put('/usuario/:id',updateUsuario);
-router.delete('/usuario/:id',deleteUsuario);
+router.put('/update/:id',updateUsuario);
+router.delete('/delete/:id',deleteUsuario);
 
 export default router;
