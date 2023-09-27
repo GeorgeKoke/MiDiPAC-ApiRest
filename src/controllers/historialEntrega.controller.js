@@ -1,4 +1,4 @@
-import { HistorialEntrega } from "../models/HistorialEntrega";
+import { HistorialEntrega } from "../models/HistorialEntrega.js";
 
 export const createHistorial = async (req, res) => {
     const {

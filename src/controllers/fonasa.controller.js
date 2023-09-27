@@ -1,4 +1,4 @@
-import { Fonasa } from "../models/Fonasa";
+import { Fonasa } from "../models/Fonasa.js";
 
 export const createLetra = async(req,res)=>{
     const {letraFonasa} = req.body;

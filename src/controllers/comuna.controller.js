@@ -1,4 +1,4 @@
-import { Comuna } from "../models/Comuna";
+import { Comuna } from "../models/Comuna.js";
 
 export const createComuna = async(req,res)=>{
     const {nombreComuna} = req.body;

@@ -1,4 +1,4 @@
-import { GrupoEtareo } from "../models/GrupoEtareo";
+import { GrupoEtareo } from "../models/GrupoEtareo.js";
 
 export const createGrupo = async(req,res)=>{
     const {rango} = req.body;

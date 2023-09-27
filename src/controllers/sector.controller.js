@@ -1,4 +1,4 @@
-import { Sector } from "../models/Sector";
+import { Sector } from "../models/Sector.js";
 
 export const createSector = async(req,res)=>{
     const {nombreSector} = req.body;

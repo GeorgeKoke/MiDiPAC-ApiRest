@@ -1,4 +1,4 @@
-import { CentroSalud_Sector } from "../models/CentroSalud_Sector";
+import { CentroSalud_Sector } from "../models/CentroSalud_Sector.js";
 
 export const createCS_Sector = async(req,res)=>{
     const {ID_CENTROSALUD, ID_SECTOR} = req.body;

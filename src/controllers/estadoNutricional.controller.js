@@ -1,4 +1,4 @@
-import { EstadoNutricional } from "../models/EstadoNutricional";
+import { EstadoNutricional } from "../models/EstadoNutricional.js";
 
 export const createEstado = async(req,res)=>{
     const {estado} = req.body;

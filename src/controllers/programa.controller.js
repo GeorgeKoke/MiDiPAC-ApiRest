@@ -1,4 +1,4 @@
-import { Programa } from "../models/Programa";
+import { Programa } from "../models/Programa.js";
 
 export const createPrograma = async(req,res)=>{
     const {nombrePrograma,ID_GRUPOETAREO} = req.body;

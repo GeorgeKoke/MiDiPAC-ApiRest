@@ -1,4 +1,4 @@
-import { Programa_Alimento } from "../models/Programa_Alimento";
+import { Programa_Alimento } from "../models/Programa_Alimento.js";
 
 export const createP_A = async(req,res)=>{
     const {ID_PROGRAMA, ID_ALIMENTO} = req.body;
