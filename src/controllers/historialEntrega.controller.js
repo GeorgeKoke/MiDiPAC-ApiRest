@@ -34,7 +34,7 @@ export const readHistoriales = async (req, res) => {
         return res.status(500).json({ message: error.message });
     }
 };
-export const readHistorialesByRut = async (req, res) => {
+export const findHistorialesByRut = async (req, res) => {
     const { rut } = req.params;
     try {
         const historiales = await HistorialEntrega.findAll({

@@ -1,6 +1,6 @@
 import { EstadoNutricional } from "../models/EstadoNutricional";
 
-export const createEstadoNutricional = async(req,res)=>{
+export const createEstado = async(req,res)=>{
     const {estado} = req.body;
 
     try {
