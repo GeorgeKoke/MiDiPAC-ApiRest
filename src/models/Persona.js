@@ -27,7 +27,7 @@ export const Persona = sequelize.define('PERSONA', {
     numFicha: DataTypes.INTEGER,
     ID_FONASA: DataTypes.INTEGER,
     ID_PROGRAMA: DataTypes.INTEGER,
-    fechaIngresoProgram: DataTypes.DATE,
+    fechaIngresoPrograma: DataTypes.DATE,
 
 }, {
     tableName: 'PERSONA',
