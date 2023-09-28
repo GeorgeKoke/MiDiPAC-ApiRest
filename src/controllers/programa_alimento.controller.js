@@ -22,11 +22,11 @@ export const readP_Alimentos = async (req,res)=>{
     }
 };
 export const findP_AByPrograma = async (req,res)=>{
-    const {id} = req.params;
+    const {programa} = req.params;
     try {
         const p_alimentos = await Programa_Alimento.findAll({
             where:[{
-                ID_PROGRAMA: id,
+                ID_PROGRAMA: programa,
             }]
         });
         res.json(p_alimentos);
@@ -35,11 +35,11 @@ export const findP_AByPrograma = async (req,res)=>{
     }
 };
 export const findP_AByAlimento = async (req,res)=>{
-    const {id} = req.params;
+    const {alimento} = req.params;
     try {
         const p_alimentos = await Programa_Alimento.findAll({
             where:[{
-                ID_ALIMENTO: id,
+                ID_ALIMENTO: alimento,
             }]
         });
         res.json(p_alimentos);

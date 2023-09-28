@@ -6,7 +6,7 @@ import { Alimento } from './Alimento.js';
 import { Persona } from './Persona.js';
 
 export const HistorialEntrega = sequelize.define('HISTORIALENTREGA',{
-    ID_HISTORIALENTREGA:{
+    ID_ENTREGA:{
         type: DataTypes.INTEGER,
         primaryKey:true,
         autoIncrement:true,

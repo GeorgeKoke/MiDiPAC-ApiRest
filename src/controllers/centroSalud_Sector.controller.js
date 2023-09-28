@@ -22,11 +22,11 @@ export const readCS_Sectores = async (req,res)=>{
     }
 };
 export const findCS_SectoresByCS = async (req,res)=>{
-    const {id} = req.params;
+    const {centro} = req.params;
     try {
         const cs_sectores = await CentroSalud_Sector.findAll({
             where:[{
-                ID_CENTROSALUD: id,
+                ID_CENTROSALUD: centro,
             }]
         });
         res.json(cs_sectores);
@@ -35,11 +35,11 @@ export const findCS_SectoresByCS = async (req,res)=>{
     }
 };
 export const findCS_SectoresBySector = async (req,res)=>{
-    const {id} = req.params;
+    const {sector} = req.params;
     try {
         const cs_sectores = await CentroSalud_Sector.findAll({
             where:[{
-                ID_SECTOR: id,
+                ID_SECTOR: sector,
             }]
         });
         res.json(cs_sectores);

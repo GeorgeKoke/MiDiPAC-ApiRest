@@ -11,7 +11,8 @@ import { createPrograma,readPrograma,readProgramas,updatePrograma,deletePrograma
 import { createSector,readSector,readSectores,updateSector,deleteSector } from "../controllers/sector.controller.js";
 import { createPersona,readPersona,readPersonas,findPersona,updatePersona,deletePersona } from "../controllers/persona.controller.js";
 import { createHistorial,readHistorial,readHistoriales,findHistorialesByRut,updateHistorial,deleteHistorial } from "../controllers/historialEntrega.controller.js";
-
+import { createCS_Sector,readCS_Sector,findCS_SectoresByCS,findCS_SectoresBySector,readCS_Sectores,updateCS_Sector,deleteCS_Sector } from "../controllers/centroSalud_Sector.controller.js";
+import { createP_A,readP_A,readP_Alimentos,findP_AByAlimento,findP_AByPrograma,updateP_A,deleteP_A } from "../controllers/programa_alimento.controller.js";
 
 const router = Router();
 
@@ -101,6 +102,22 @@ router.post('/post-sector',createSector);
 router.put('/put-sector/:id',updateSector);
 router.delete('/delete-sector/:id',deleteSector);
 
+//CENTROSALUD X SECTOR
+router.get('/get-centro_sectores', readCS_Sectores);
+router.get('/get-centro_sector/:id', readCS_Sector);
+router.get('/get-centro_sector/:centro', findCS_SectoresByCS);
+router.get('/get-centro_sector/:sector', findCS_SectoresBySector);
+router.post('/post-centro_sector',createCS_Sector);
+router.put('/put-centro_sector/:id',updateCS_Sector);
+router.delete('/delete-centro_sector/:id',deleteCS_Sector);
 
+//PROGRAMA X ALIMENTO
+router.get('/get-programa_alimentos', readP_Alimentos);
+router.get('/get-programa_alimento/:id', readP_A);
+router.get('/get-programa_alimento/:programa', findP_AByPrograma);
+router.get('/get-programa_alimento/:alimento', findP_AByAlimento);
+router.post('/post-programa_alimento',createP_A);
+router.put('/put-programa_alimento/:id',updateP_A);
+router.delete('/delete-programa_alimento/:id',deleteP_A);
 
 export default router;
