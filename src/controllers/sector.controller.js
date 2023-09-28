@@ -1,7 +1,7 @@
 import { Sector } from "../models/Sector.js";
 
 export const createSector = async(req,res)=>{
-    const {nombreSector} = req.body;
+    const {nombreSector,ID_CENTROSALUD} = req.body;
 
     try {
         const nuevoSector = await Sector.create({
