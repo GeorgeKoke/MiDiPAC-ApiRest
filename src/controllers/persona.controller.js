@@ -17,7 +17,7 @@ export const createPersona = async(req,res)=>{
         numFicha, 
         ID_FONASA, 
         ID_PROGRAMA, 
-        fechaIngresoPrograma 
+        fechaIngresoProgram 
     } = req.body;
 
     try {
@@ -37,7 +37,7 @@ export const createPersona = async(req,res)=>{
             numFicha, 
             ID_FONASA, 
             ID_PROGRAMA, 
-            fechaIngresoPrograma 
+            fechaIngresoProgram 
         });
         res.json(nuevaPersona);
     } catch (error) {
@@ -95,7 +95,7 @@ export const updatePersona = async (req,res)=>{
         numFicha, 
         ID_FONASA, 
         ID_PROGRAMA, 
-        fechaIngresoPrograma 
+        fechaIngresoProgram 
     } = req.body;
 
     try {
@@ -118,7 +118,7 @@ export const updatePersona = async (req,res)=>{
             persona.numFicha = numFicha;
             persona.ID_FONASA = ID_FONASA;
             persona.ID_PROGRAMA = ID_PROGRAMA;
-            persona.fechaIngresoPrograma = fechaIngresoPrograma;
+            persona.fechaIngresoProgram = fechaIngresoProgram;
             await persona.save();
             res.sendStatus(204);
         }
