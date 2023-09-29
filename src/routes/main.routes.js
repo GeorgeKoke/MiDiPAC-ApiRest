@@ -33,7 +33,7 @@ router.delete('/delete-rol/:id',deleteRol);
 //PERSONA
 router.get('/get-personas', readPersonas);
 router.get('/get-persona/:id', readPersona);
-router.get('/get-persona/:rut', findPersona);
+router.get('/find-persona/:rut', findPersona);
 router.post('/post-persona',createPersona);
 router.put('/put-persona/:id',updatePersona);
 router.delete('/delete-persona/:id',deletePersona);
@@ -41,7 +41,7 @@ router.delete('/delete-persona/:id',deletePersona);
 //HISTORIAL ENTREGA
 router.get('/get-historiales', readHistoriales);
 router.get('/get-historial/:id', readHistorial);
-router.get('/get-historiales/:rut', findHistorialesByRut);
+router.get('/find-historiales/:rut', findHistorialesByRut);
 router.post('/post-historial',createHistorial);
 router.put('/put-historial/:id',updateHistorial);
 router.delete('/delete-historial/:id',deleteHistorial);
